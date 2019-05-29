@@ -1,0 +1,66 @@
+.main {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.center-col {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.row-text {
+    margin: -40px 0;
+}
+
+h1 {
+    font-size: 64px;
+}
+p {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 42px;
+    }
+    p {
+        font-size: 24px;
+    }  
+    .row-text {
+        margin: -20px 0;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 26px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .row-text {
+        margin: 0px 0;
+    }
+  }

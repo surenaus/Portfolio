@@ -2,6 +2,9 @@
 // Network-first strategy means that if there is no internet connection,
 // the browser will use files previously saved locally to the user’s device instead.
 // AKA Offline Mode!
+const withCSS = require('@zeit/next-css')
+const withImages = require('next-images')
+const withVideos = require('next-videos')
 const withOffline = require("next-offline");
 
 const nextConfig = {
@@ -28,4 +31,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withOffline(nextConfig);
+module.exports = withOffline(withCSS(withImages(withVideos(nextConfig))));

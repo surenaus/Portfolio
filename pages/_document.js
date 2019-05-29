@@ -1,11 +1,14 @@
 import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
-export const title = "Next.js PWA Boilerplate";
+export const title = "PWA Portfolio";
 const description =
   "Next.js PWA Boilerplate starts your progressive web app off with a perfect Google Lighthouse score.";
 const url = `https://next-pwa-boilerplate.now.sh`;
 const thumbnail = `${url}/static/graphics/thumbnail.png`;
+
 
 export default class MyDocument extends Document {
   // This snippet will collect all of page’s critical CSS
@@ -37,7 +40,7 @@ export default class MyDocument extends Document {
 
           {/* SEO: App description for search-engine optimization */}
           <meta name="Description" content={description} />
-
+        
           {/* Bonus: Have beautiful preview tiles when users share your website on social media */}
           <meta property="og:title" content={title} />
           <meta property="og:description" content={description} />
@@ -114,8 +117,10 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
+          <Header/>
           <Main />
           <NextScript />
+          <Footer />
         </body>
       </html>
     );
