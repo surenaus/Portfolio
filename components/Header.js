@@ -1,8 +1,10 @@
 import React from 'react';
 // import CopyText from 'react-copy-text'
+import { Container, Row, Col } from 'react-grid-system'
 import Link from 'next/link' 
 import dynamic from 'next/dynamic'
 import LogoImage from '../static/logo.png'
+import CV from '../static/social-media/cv.svg'
 import Phone from '../static/social-media/phone.png'
 import Github from '../static/social-media/github.svg'
 import Linkedin from '../static/social-media/linkedin.svg'
@@ -22,6 +24,9 @@ const NoSSRImages = dynamic(
     loading: () => import('./CustomText')
   }
 )
+
+const mus = {
+}
 class Header extends React.Component {
 
     constructor() {
@@ -37,47 +42,39 @@ class Header extends React.Component {
     
     render() {
         return (
-          <header class="header">
-            <a href="" class="logo">
-              <NoSSRImages text="SuRen" image={LogoImage} styling="logo-img" alt="Logo"/>
-            </a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu" style={{ textAlign: 'center' }}>
-              <li>
-                <Link href={cvlink}>
-                  <a className="link" target="_blank" rel="noreferrer" style={{ fontWeight: 'bold'}}>
-                      CV
+          <header className="container shadow2">
+            <NoSSRImages className="" text="SuRen" image={LogoImage} styling="logo-img" alt="Logo" /> 
+            <span className="social controller" id="menuToggle">
+              <input className="menu-btn" type="checkbox" id="menu-btn" />
+              <label className="menu-icon" for="menu-btn"><span className="navicon"></span></label>
+              <div className="menu" id="menu">
+                <button className="link">
+                  <a href={cvlink} target="_blank" rel="noreferrer" style={mus}>
+                    <NoSSRImages text="cv" image={CV} styling="icon" alt="CV pdf"/>
                   </a>
-                </Link>
-              </li>
-              <li>
-                <Link href={linkedln}>
-                  <a className="link" target="_blank" rel="noreferrer">
+                </button>
+                <button className="link">
+                  <a href={linkedln} target="_blank" rel="noreferrer" style={mus}>
                     <NoSSRImages text="in" image={Linkedin} styling="icon" alt="Linkedin Profile"/>
                   </a>
-                </Link>
-              </li>
-              <li>
-                <Link href={github}>
-                  <a className="link" target="_blank" rel="noreferrer">
+                </button>
+                <button className="link">
+                  <a href={github} target="_blank" rel="noreferrer" style={mus}>
                     <NoSSRImages text="gh" image={Github} styling="icon" alt="Github Profile"/>
                   </a>
-                </Link>
-              </li>
-              <li>
-                <Link href={gmail}>  
-                  <a className="link" target="_blank" rel="noreferrer">
+                </button>
+                <button className="link" >
+                  <a href={gmail} target="_blank" rel="noreferrer" style={mus}>
                     <NoSSRImages text="@" image={Google} styling="icon" alt="E-mail"/>
                   </a>
-                </Link>
-              </li>
-              <li>
-                <a className="link" target="_blank" rel="noreferrer">
-                  <NoSSRImages text="Call" image={Phone} styling="icon" alt="Phone Number"/>
-                </a>
-              </li>
-            </ul>
+                </button>
+                <button className="link">
+                  <a target="_blank" rel="noreferrer" style={mus}>
+                    <NoSSRImages text="Call" image={Phone} styling="icon" alt="Phone Number"/>
+                  </a>
+                </button>
+              </div>
+            </span>
           </header>
         );
       }

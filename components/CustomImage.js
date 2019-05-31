@@ -6,7 +6,7 @@ export default class CustomImage extends React.Component {
     }
     render() {
         return (
-            <img src={this.props.image} className={this.props.styling} alt={this.props.alt} fluid />
+            <img src={this.props.image} className={this.props.styling} title={this.props.alt} />
         )
     }
 }

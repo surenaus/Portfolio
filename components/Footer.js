@@ -12,7 +12,7 @@ class Footer extends React.Component {
     render() {
         return (
           <footer style={footerstyle}>
-            Can be your since july of 2019.
+            Can be yours since july of 2019.
           </footer>
         )
     }

@@ -7,8 +7,14 @@ import { title } from "./_document";
 const GlobalStyle = createGlobalStyle`
   :root {
   }
-
+  @font-face {
+    font-family: 'Lato';
+    src: url(../static/fonts/Lato-Light.ttf) format('truetype');
+    font-weight: light;
+    font-style: normal;
+  }
   body {
+    font-family: 'Lato';
     background: var(--background--1);
     margin: 0;
     padding: 0;

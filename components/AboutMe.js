@@ -1,4 +1,7 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-grid-system'
+import dynamic from 'next/dynamic'
+
 import avatar from '../static/images/profile.webp'
 import html from '../static/logos/html.svg';
 import css from '../static/logos/css.svg';
@@ -12,25 +15,31 @@ import ts from '../static/logos/ts.svg';
 
 import '../static/stylus/components/aboutMe.css';
 
-const logoStyle = {
-    width: '50px',
-    height: '50px',
-    margin: '10px'
-}
-const avatarStyle = {
-    width: "10%",
-    height: "10%"
-}
-
+const NoSSRImages = dynamic(
+    () => import('./CustomImage'),
+    {
+      loading: () => import('./CustomText')
+    }
+)
+  
 class AboutMe extends React.Component {
     render() {
         return (
-            <div className="container text-white">
-                <h1 className="display-4 text-center" style={{margin: '7% 0'}}>
-                    About me
-                </h1>
-                <div className="row">
-                    <div className="col-md-12 col-lg-8">
+            <Container style={{zIndex: 2, minHeight: '100vh'}}>
+                <Row style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    minHeight: '60vh',
+                    textAlign: 'center'
+                }}>
+                    <Col md={12} lg={12} sm={12} style={{
+                        margin: 0, padding: 0
+                    }}>
+                        <h1 className="display-4 text-center">
+                            About me
+                        </h1>
+                    </Col>
+                    <Col md={12} lg={8} style={{ margin: 0, padding: 0 }}>
                         <p>
                             I had been working as an Back-End Developer about 1 year
                             and also as an Front-End Developer same time.
@@ -51,28 +60,28 @@ class AboutMe extends React.Component {
                         <p>
                             Below is a list of my current technical skills:
                         </p>
-                        <div className="col">
-                            <img style={logoStyle} title="html5" alt="html5" src={html}/>
-                            <img style={logoStyle} title="css3" alt="css3" src={css}/>
-                            <img style={logoStyle} title="node.js" alt="node.js" src={js}/>
-                            <img style={logoStyle} title="jQuery" alt="jQuery" src={jquery}/>
-                            <img style={logoStyle} title="bootstrap4" alt="bootstrap4" src={bootstrap}/>
-                            <img style={logoStyle} title="Vue.js" alt="Vue.js" src={vue}/>
-                            <img style={logoStyle} title="React.js" alt="React.js" src={react}/>
-                            <img style={logoStyle} title="django, RestFramework" alt="django, rest" src={python}/>
-                            <img style={logoStyle} title="typescript" alt="typescript" src={ts}/>
-                        </div>
-                    </div>
-                    <div className="col-md-12 col-lg-4">
-                        <div className="col">
-                            <img src={avatar} style={avatarStyle} alt="author" />
-                        </div>
-                        <div className="col">
+                        <Col>
+                            <NoSSRImages image={html} styling="logoStyle" alt="html5" text=""/>
+                            <NoSSRImages image={css} styling='logoStyle' alt="css3" text=""/>
+                            <NoSSRImages image={js} styling='logoStyle' alt="node.js" text=""/>
+                            <NoSSRImages image={jquery} styling='logoStyle' alt="jQuery" text=""/>
+                            <NoSSRImages image={bootstrap} styling='logoStyle' alt="bootstrap4" text=""/>
+                            <NoSSRImages image={vue} styling='logoStyle' alt="Vue.js" text=""/>
+                            <NoSSRImages image={react} styling='logoStyle' alt="React.js" text=""/>
+                            <NoSSRImages image={python} styling='logoStyle' alt="django, RestFramework" text=""/>
+                            <NoSSRImages image={ts} styling='logoStyle' alt="typescript" text=""/>
+                        </Col>
+                    </Col>
+                    <Col md={12} lg={4}>
+                        <Col>
+                            <NoSSRImages image={avatar} styling='avatarStyle' alt="author" text="author photo"/>
+                        </Col>
+                        <Col>
                             <p className="text-center"><small className="about-avatar-text">Renat Suleymanov</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </Col>
+                    </Col>
+                </Row>
+            </Container>
         )
     }
 }

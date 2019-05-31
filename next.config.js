@@ -6,6 +6,7 @@ const withCSS = require('@zeit/next-css')
 const withImages = require('next-images')
 const withVideos = require('next-videos')
 const withOffline = require("next-offline");
+const withFonts = require('next-fonts');
 
 const nextConfig = {
   target: "serverless",
@@ -31,4 +32,4 @@ const nextConfig = {
   }
 };
 
-module.exports = withOffline(withCSS(withImages(withVideos(nextConfig))));
+module.exports = withOffline(withCSS(withImages(withVideos(withFonts(nextConfig)))));

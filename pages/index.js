@@ -1,7 +1,10 @@
 import fetch from "isomorphic-unfetch";
 import Intro from '../components/Intro';
+import AboutMe from '../components/AboutMe';
 import dynamic from 'next/dynamic'
 import styled from "styled-components";
+
+import back from '../static/images/back.webp'
 
 const AboutMeDiv = styled.div`
   position: relative;
@@ -20,10 +23,19 @@ const AboutMeDiv = styled.div`
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
   }
-  .container {
-    position: relative;
-    z-index: 2;
+  .overlay-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
   }
+
   .overlay {
     position: absolute;
     top: 0;
@@ -34,50 +46,67 @@ const AboutMeDiv = styled.div`
     opacity: 0.5;
     z-index: 1;
   }
-  @media (pointer: coarse) and (hover: none) {
-    .about-me {
-      background: url('../static/images/back.webp') black no-repeat center center scroll;
-    }
-    .about-me video {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 320px) and (max-width: 768px){
-    .onlyforlg {
-      display: none;
-    }
-  }
 `;
-
+const CardsDiv = styled.div`
+  background-color: black;
+`;
 const NoSSRVideo = dynamic({
   loader: () => import('../components/Video'),
-  loading: () => <p>Loading ...</p>,
   ssr: false
 })
-
-const NoSSRAboutMe = dynamic({
-  loader: () => import('../components/AboutMe'),
+const NoSSRImages = dynamic(
+  () => import('../components/CustomImage'),
+  {
+    ssr: false
+  }
+)  
+const NoSSRPI = dynamic({
+  loader: () => import('../components/ParallaxImage'),
   ssr: false
 })
-
+const NoSSRCards = dynamic({
+  loader: () => import('../components/Cards'),
+  ssr: false
+})
+// cover-section
+const styling = {
+  position: 'absolute',
+  top: 0,
+}
+const sector = {
+  backgroundColor: 'white',
+}
 const Index = (
   //{ posts }
   ) => (
   <>
-    <div className="text-white">
+    <div className="text-black" style={sector}>
       <section id="intro">
           <Intro/>
       </section>
     </div>
-   {/*
    <AboutMeDiv className="text-white">
-      <div className="overlay"></div>
-        <NoSSRVideo />
-        <section id="about" style={{zIndex: '3'}}>    
-            <NoSSRAboutMe/>
+   
+        <div className="overlay"></div>
+        <div className="overlay-image">
+          {/*
+            <NoSSRImages image={back}
+          //styling={styling} 
+            alt="" text="" />
+          */}
+          <NoSSRPI image={ back }/>
+        </div>
+        <section id="about" style={{
+          zIndex: 2
+        }}>    
+          <AboutMe style={{zIndex: 2}} />
         </section>
     </AboutMeDiv> 
-  */}
+    <CardsDiv className="text-white text-center">
+      <section id="projects">
+        <NoSSRCards/>
+      </section>
+    </CardsDiv>
   </>
 );
 
