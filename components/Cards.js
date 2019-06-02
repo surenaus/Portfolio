@@ -10,18 +10,20 @@ import t from '../static/images/vuex.webp'
 class Cards extends React.Component {
     render() {
         return (
-            <Container>
+            <Container 
+                className="cards-project-section"
+                >
                 <Row>
-                    <Col>
+                    <Col lg={12} className="display-4 cards-title">
                         <h1>
-                        Source Code Projects
+                        Projects
                         </h1>
                     </Col>
                 </Row>
                 <Row>
-                    <Col lg={3}>
+                    <Col lg={4}>
                         <figure className="snip1529">
-                            <img src={f} height="200px" width="100%" alt="pr-sample13" />
+                            <img src={f}  alt="pr-sample13" />
                             <div className="date"><span className="day">7</span><span className="month">June</span></div>
                             <figcaption>
                                 <h3>PhotoTurntable API</h3>
@@ -31,7 +33,7 @@ class Cards extends React.Component {
                             <a href="http://gititis.kpfu.ru/suren/PhotoTurntable" rel="noopener noreferrer" target="_blank"></a>
                         </figure>
                     </Col>
-                    <Col lg={3}>
+                    <Col lg={4}>
                         <figure className="snip1529">
                             <img src={s} alt="pr-sample13" />
                             <div className="date"><span className="day">11</span><span className="month">May</span></div>
@@ -43,7 +45,7 @@ class Cards extends React.Component {
                             <a href="https://github.com/surenaus/react_todo_beeje"  rel="noopener noreferrer" target="_blank"></a>
                         </figure>
                     </Col>
-                    <Col lg={3}>
+                    <Col lg={4}>
                         <figure className="snip1529">
                             <img src={t} alt="pr-sample13" />
                             <div className="date"><span className="day">10</span><span className="month">May</span></div>
@@ -55,9 +57,9 @@ class Cards extends React.Component {
                             <a href="https://github.com/surenaus/vue-todo-app" rel="noopener noreferrer" target="_blank"></a>
                         </figure>
                     </Col>
-                    <Col lg={3}>
+                    <Col lg={4}>
                         <figure className="snip1529">
-                            <img src={logo} height="200px" width="100%" alt="pr-sample13" />
+                            <img src={logo} alt="pr-sample13" className="no-image"/>
                             <div className="date"><span className="day">7</span><span className="month">June</span></div>
                             <figcaption>
                                 <h3>PhotoTurntable API</h3>

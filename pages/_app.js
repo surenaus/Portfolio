@@ -8,13 +8,17 @@ const GlobalStyle = createGlobalStyle`
   :root {
   }
   @font-face {
-    font-family: 'Lato';
-    src: url(../static/fonts/Lato-Light.ttf) format('truetype');
-    font-weight: light;
+    font-family: 'BebasNeue';
+    src: url(../static/fonts/BebasNeue-Thin.ttf) format('truetype');
+    font-weight: thin;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'BebasNeue Regular';
+    src: url(../static/fonts/BebasNeue-Regular.ttf) format('truetype');
+  }
   body {
-    font-family: 'Lato';
+    font-family: 'BebasNeue';
     background: var(--background--1);
     margin: 0;
     padding: 0;

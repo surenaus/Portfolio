@@ -1,4 +1,5 @@
 import React from 'react';
+import '../static/stylus/components/footer.css';
 
 const footerstyle = {
   width: '100%',
@@ -9,12 +10,14 @@ const footerstyle = {
 } 
 
 class Footer extends React.Component {
-    render() {
-        return (
-          <footer style={footerstyle}>
-            Can be yours since july of 2019.
-          </footer>
-        )
-    }
+
+  render() {
+      return (
+        <footer style={footerstyle}>
+          Can be yours since july of 2019.
+          <span className="message" style={{display: 'none'}}>AHAHAH my life's become better!!!</span>
+        </footer>
+      )
+  }
 }
 export default Footer;

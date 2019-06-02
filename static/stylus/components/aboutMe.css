@@ -1,5 +1,17 @@
+.my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.aboutMe-container {
+    z-index: 2; 
+    min-height: 100vh;
+    font-family: 'BebasNeue Regular';
+    font-weight: 100;
+    letter-spacing: 0.2vw;
+}
 .display-4 {
-    font-size: 36px;
+    font-size: 46px;
+    height: 10vh;
 }
 .avatarStyle {
     width: 100%;
@@ -15,6 +27,9 @@
 .text-white {
     color: white;
 }
+.text-main {
+    color: #f8f9fa;
+}
 .text-black {
     color: black;
 }
@@ -23,4 +38,19 @@
 }
 .upoverlay {
     z-index: 10;
+}
+
+@media (max-width: 769) {
+    .display-4 {
+        font-size: 36px;
+        height: 1vh;
+        margin: 0;
+        padding: 0;
+    }
+    .display-4-parent {
+        height: 10px;
+        line-height: 10px;
+        margin: 0;
+        padding: 0;
+    }
 }

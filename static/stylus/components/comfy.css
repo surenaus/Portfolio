@@ -1,0 +1,13 @@
+
+  
+.message {
+    position: absolute;
+    top: 90vh;
+    right: 70px;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin: 0.5em;
+    line-height: 1.1em;
+    background-color: yellow;
+    z-index: 24;
+}

@@ -1,22 +1,32 @@
+.cards-project-section {
+  min-height: 100vh;
+  letter-spacing: 0.2vw;
+}
+.cards-title {
+  margin-bottom: 120px;
+  z-index: 2; 
+  font-family: 'BebasNeue Regular';
+  font-weight: 100;
+  letter-spacing: 0.2vw;
+  font-size: 40px;
+}
 .text-center {
   text-align: center;
 }
 
 .snip1529 {
   background-color: #000000;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px white;
   color: #ffffff;
-  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.6em;
-  margin: 10px;
-  margin-left: -10px;
-  max-width: 310px;
-  min-width: 250px;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   position: relative;
   text-align: left;
-  width: 100%;
+  margin-bottom: 10%;
 }
 
 .snip1529 * {
@@ -27,10 +37,20 @@
 }
 
 .snip1529 img {
-  max-width: 100%;
+  width: 100%;
   vertical-align: top;
   position: relative;
-  opacity: 0.75;
+  opacity: 0.85;
+  object-fit: cover;
+  object-position: 100% 0;
+
+  height: 280px;
+}
+.snip1529 .no-image {
+  object-fit: scale-down;
+  position: absolute;
+  opacity: 1;
+  object-position: 50% 50%;
 }
 
 .snip1529 figcaption {
@@ -72,10 +92,9 @@
 
 .snip1529 h3 {
   font-weight: 800;
-  letter-spacing: -0.4px;
 }
 
-.snip1529 .hover {
+/* .snip1529 .hover {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -87,7 +106,7 @@
   font-size: 65px;
   justify-content: center;
   opacity: 0;
-}
+} */
 
 .snip1529 a {
   left: 0;

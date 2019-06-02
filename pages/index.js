@@ -74,13 +74,13 @@ const styling = {
   top: 0,
 }
 const sector = {
-  backgroundColor: 'white',
+  backgroundColor: 'black',
 }
 const Index = (
   //{ posts }
   ) => (
   <>
-    <div className="text-black" style={sector}>
+    <div className="text-main" style={sector}>
       <section id="intro">
           <Intro/>
       </section>
@@ -102,7 +102,7 @@ const Index = (
           <AboutMe style={{zIndex: 2}} />
         </section>
     </AboutMeDiv> 
-    <CardsDiv className="text-white text-center">
+    <CardsDiv className="text-white text-center projects">
       <section id="projects">
         <NoSSRCards/>
       </section>

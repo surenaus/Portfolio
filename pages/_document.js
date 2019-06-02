@@ -2,6 +2,8 @@ import Document, { Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import '../static/stylus/components/comfy.css';
+
 
 export const title = "PWA Portfolio";
 const description =
@@ -120,7 +122,7 @@ export default class MyDocument extends Document {
           <Header/>
           <Main />
           <NextScript />
-          <Footer />
+          <Footer id="anchor"/>
         </body>
       </html>
     );

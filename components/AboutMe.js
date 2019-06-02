@@ -25,24 +25,21 @@ const NoSSRImages = dynamic(
 class AboutMe extends React.Component {
     render() {
         return (
-            <Container style={{zIndex: 2, minHeight: '100vh'}}>
-                <Row style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    minHeight: '60vh',
-                    textAlign: 'center'
-                }}>
-                    <Col md={12} lg={12} sm={12} style={{
-                        margin: 0, padding: 0
-                    }}>
+            <Container className="aboutMe-container">
+                <Row>
+                    <Col md={12} lg={12} sm={12} style={{ margin: '10px 0'}} className="my-auto display-4-parent">
                         <h1 className="display-4 text-center">
                             About me
                         </h1>
                     </Col>
-                    <Col md={12} lg={8} style={{ margin: 0, padding: 0 }}>
+                </Row>
+                <Row style={{
+                    minHeight: '60vh'
+                }}>
+                    <Col md={8} lg={8}  className="my-auto">
                         <p>
-                            I had been working as an Back-End Developer about 1 year
-                            and also as an Front-End Developer same time.
+                            I had been working as a Back-End Developer about 1 year
+                            and also as a Front-End Developer in the same time.
                             I choosed Both of them.
                         </p>
                         <p>
@@ -72,7 +69,7 @@ class AboutMe extends React.Component {
                             <NoSSRImages image={ts} styling='logoStyle' alt="typescript" text=""/>
                         </Col>
                     </Col>
-                    <Col md={12} lg={4}>
+                    <Col md={4} lg={4} className="my-auto" >
                         <Col>
                             <NoSSRImages image={avatar} styling='avatarStyle' alt="author" text="author photo"/>
                         </Col>
