@@ -40,7 +40,7 @@ const AboutMeDiv = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     background-color: black;
     opacity: 0.5;
@@ -79,7 +79,7 @@ const sector = {
 const Index = (
   //{ posts }
   ) => (
-  <>
+  <> 
     <div className="text-main" style={sector}>
       <section id="intro">
           <Intro/>

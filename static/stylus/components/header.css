@@ -160,8 +160,10 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   {
     position: absolute;
     width: 100vw;
-    top: 81px;
+    top: 61px;
     left: 0;
+    padding: 4px 0;
+    opacity: 0.95;
     background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -172,13 +174,4 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
     z-index: 0;
   }
-}
-
-.tip {
-  position: absolute;
-  top: 3svh;
-  right: 16vw;
-  border: 1px solid yellow;
-  z-index: 10;
-  font-size: 30px;
 }

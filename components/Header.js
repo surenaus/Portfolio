@@ -75,7 +75,6 @@ class Header extends React.Component {
                 </button>
               </div>
             </span>
-            <span className="tip"> Contact me </span>
           </header>
         );
       }

@@ -3,10 +3,10 @@ import { Parallax, ParallaxProvider  } from 'react-scroll-parallax';
 const ParallaxImageChild = ({image}) => (
   <Parallax
     className="custom-class"
-    style={{ margin: 0, padding: 0, width: "100vw", height: "100%" }}
+    style={{ minHeight: "100%" }}
     y={[-20, 20]}
         tagOuter="figure">
-        <img src={image} style={{margin: 0, padding: 0, width:"100vw", height:"150vh"}} />
+        <img src={image} style={{minHeight:"100%"}} />
     </Parallax>
 );
 

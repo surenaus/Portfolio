@@ -6,7 +6,10 @@ const footerstyle = {
   height: '60px',
   lineHeight: '60px',
   backgroundColor: '#f7f7f7',
-  textAlign: 'center'
+  textAlign: 'center',
+  color: 'black',
+  fontWeight: 'bold',
+  letterSpacing: '0.4vw'
 } 
 
 class Footer extends React.Component {
@@ -15,7 +18,6 @@ class Footer extends React.Component {
       return (
         <footer style={footerstyle}>
           Can be yours since july of 2019.
-          <span className="message" style={{display: 'none'}}>AHAHAH my life's become better!!!</span>
         </footer>
       )
   }

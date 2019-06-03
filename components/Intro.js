@@ -13,9 +13,9 @@ class Intro extends React.Component {
               minHeight: '100vh',
               textAlign: 'center'
             }}>
-            <Col>
-              <h1>My Name's Renat</h1>
-              <h1>I'm a FullStack Developer</h1>
+            <Col className="lines">
+              <h1 className="first-line">My Name's Renat</h1>
+              <h1 className="second-line">I'm a FullStack Developer</h1>
               <p>Work Smart, Not Hard</p>
             </Col>
           </Row>
