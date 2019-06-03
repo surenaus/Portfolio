@@ -57,7 +57,7 @@ class AboutMe extends React.Component {
                         <p>
                             Below is a list of my current technical skills:
                         </p>
-                        <Col>
+                        <Col className="icons-technologies">
                             <NoSSRImages image={html} styling="logoStyle" alt="html5" text=""/>
                             <NoSSRImages image={css} styling='logoStyle' alt="css3" text=""/>
                             <NoSSRImages image={js} styling='logoStyle' alt="node.js" text=""/>
@@ -69,7 +69,7 @@ class AboutMe extends React.Component {
                             <NoSSRImages image={ts} styling='logoStyle' alt="typescript" text=""/>
                         </Col>
                     </Col>
-                    <Col md={4} lg={4} className="my-auto" >
+                    <Col md={4} lg={4} >
                         <Col>
                             <NoSSRImages image={avatar} styling='avatarStyle' alt="author" text="author photo"/>
                         </Col>

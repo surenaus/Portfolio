@@ -1,4 +1,3 @@
-import fetch from "isomorphic-unfetch";
 import Intro from '../components/Intro';
 import AboutMe from '../components/AboutMe';
 import dynamic from 'next/dynamic'
@@ -50,16 +49,7 @@ const AboutMeDiv = styled.div`
 const CardsDiv = styled.div`
   background-color: black;
 `;
-const NoSSRVideo = dynamic({
-  loader: () => import('../components/Video'),
-  ssr: false
-})
-const NoSSRImages = dynamic(
-  () => import('../components/CustomImage'),
-  {
-    ssr: false
-  }
-)  
+
 const NoSSRPI = dynamic({
   loader: () => import('../components/ParallaxImage'),
   ssr: false
@@ -89,11 +79,6 @@ const Index = (
    
         <div className="overlay"></div>
         <div className="overlay-image">
-          {/*
-            <NoSSRImages image={back}
-          //styling={styling} 
-            alt="" text="" />
-          */}
           <NoSSRPI image={ back }/>
         </div>
         <section id="about" style={{
@@ -110,13 +95,5 @@ const Index = (
   </>
 );
 
-// Index.getInitialProps = async function() {
-//   const fetchPosts = await fetch("https://jsonplaceholder.typicode.com/posts");
-//   const posts = await fetchPosts.json();
-
-//   return {
-//     posts
-//   };
-// };
 
 export default Index;

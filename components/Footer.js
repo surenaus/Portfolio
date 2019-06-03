@@ -1,5 +1,4 @@
 import React from 'react';
-import '../static/stylus/components/footer.css';
 
 const footerstyle = {
   width: '100%',

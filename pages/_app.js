@@ -5,20 +5,22 @@ import { title } from "./_document";
 
 // Any global CSS variables and selectors we want
 const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'BebasNeue Regular';
+  font-weight: 100;
+  src: url(../static/fonts/BebasNeue-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(../static/fonts/BebasNeue-Thin.ttf) format('truetype');
+  font-weight: thin;
+  font-style: normal;
+}
   :root {
-  }
-  @font-face {
-    font-family: 'BebasNeue';
-    src: url(../static/fonts/BebasNeue-Thin.ttf) format('truetype');
-    font-weight: thin;
-    font-style: normal;
-  }
-  @font-face {
     font-family: 'BebasNeue Regular';
-    src: url(../static/fonts/BebasNeue-Regular.ttf) format('truetype');
   }
+
   body {
-    font-family: 'BebasNeue';
     background: var(--background--1);
     margin: 0;
     padding: 0;

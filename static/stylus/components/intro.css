@@ -1,6 +1,7 @@
 .intro {
   min-height: 100vh;
   letter-spacing: 1vw;
+  font-family: "BebasNeue";
 }
 .intro .first-line, .intro .second-line {
   font-size: 56px;
@@ -37,23 +38,10 @@
    
   } */
   @media (max-width: 768px) {
-    /* .lines {
-      line-height: 40vh;
-    } */
-    /* .intro h1 {
-      font-size: 3vw;
-      line-height: 10vh;
-    }  */
+
     .intro .first-line, .intro .second-line {
       font-size: 5.2vw;
     }
-    /* .intro .first-line {
-      min-height: 50px;
-    }
-    .intro .second-line {
-      margin-top: -20px;
-      font-size: 40px;
-    } */
     .intro .main p {
       font-size: 4vw;
     } 

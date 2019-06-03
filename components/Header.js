@@ -1,6 +1,5 @@
 import React from 'react';
 // import CopyText from 'react-copy-text'
-import { Container, Row, Col } from 'react-grid-system'
 import Link from 'next/link' 
 import dynamic from 'next/dynamic'
 import LogoImage from '../static/logo.png'
