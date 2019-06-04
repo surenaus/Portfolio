@@ -68,7 +68,7 @@ class AboutMe extends React.Component {
                         </Col>
                     </Col>
                     <Col md={4} lg={4} className="my-auto" >
-                        <Col>
+                        <Col align="center">
                             <NoSSRImages image={avatar} styling='avatarStyle' alt="author" text="author photo"/>
                         </Col>
                         <Col>
