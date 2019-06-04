@@ -6,7 +6,7 @@ class Footer extends React.Component {
   render() {
       return (
         <footer className="footer">
-          Can be yours since july of 2019.
+          Can be yours from july of 2019.
         </footer>
       )
   }
