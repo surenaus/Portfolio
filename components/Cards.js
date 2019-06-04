@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Row, Col }  from 'react-grid-system'
 import '../static/stylus/components/port.css';
-import girl from '../static/images/tsc.webp'
 import logo from '../static/logo.png'
 import f from '../static/images/lg.webp'
 import s from '../static/images/sm-redux.webp'
