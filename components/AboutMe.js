@@ -36,7 +36,7 @@ class AboutMe extends React.Component {
                 <Row className="aboutMe-text-row">
                     <Col md={8} lg={8}  className="my-auto">
                         <p>
-                            I have been working as a Back-End Developer about 1 year
+                            I have been working as a Back-End Developer
                             and also as a Front-End Developer in the same time.
                             I find both of them inspiring and interesting.
                         </p>
