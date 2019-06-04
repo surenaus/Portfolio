@@ -3,6 +3,11 @@
   letter-spacing: 1vw;
   font-family: "BebasNeue";
 }
+.intro .row-main {
+  display: flex;
+  min-height: 100vh;
+  text-align: center;
+}
 .intro .first-line, .intro .second-line {
   font-size: 56px;
   line-height: 4vh;

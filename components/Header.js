@@ -1,5 +1,4 @@
 import React from 'react';
-// import CopyText from 'react-copy-text'
 import Link from 'next/link' 
 import dynamic from 'next/dynamic'
 import LogoImage from '../static/logo.png'
@@ -13,7 +12,6 @@ const cvlink = 'https://drive.google.com/file/d/1c4F0xE8HvLvwUXfNwJLounEPKU28Ajv
 const linkedln = "https://www.linkedin.com/in/renat-suleymanov-934260108/";
 const gmail = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=suleimanov150796@gmail.com&su=job&body=Hello!&tf=1'
 const github = 'https://github.com/surenaus';
-const blank = null
 
 const NoSSRImages = dynamic(
   () => import('./CustomImage'),

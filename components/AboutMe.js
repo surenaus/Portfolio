@@ -27,15 +27,13 @@ class AboutMe extends React.Component {
         return (
             <Container className="aboutMe-container">
                 <Row>
-                    <Col md={12} lg={12} sm={12} style={{ margin: '10px 0'}} className="my-auto display-4-parent">
+                    <Col md={12} lg={12} sm={12} className="my-auto display-4-parent">
                         <h1 className="display-4 text-center">
                             About me
                         </h1>
                     </Col>
                 </Row>
-                <Row style={{
-                    minHeight: '60vh'
-                }}>
+                <Row className="aboutMe-text-row">
                     <Col md={8} lg={8}  className="my-auto">
                         <p>
                             I have been working as a Back-End Developer about 1 year

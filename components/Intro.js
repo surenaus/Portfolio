@@ -6,13 +6,7 @@ class Intro extends React.Component {
     render() {
       return (
         <Container className="intro">
-          <Row className="main"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              minHeight: '100vh',
-              textAlign: 'center'
-            }}>
+          <Row className="main row-main" align="center">
             <Col className="lines">
               <h1 className="first-line">My Name's Renat</h1>
               <h1 className="second-line">I'm a FullStack Developer</h1>

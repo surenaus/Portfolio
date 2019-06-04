@@ -1,54 +1,9 @@
 import Intro from '../components/Intro';
 import AboutMe from '../components/AboutMe';
 import dynamic from 'next/dynamic'
-import styled from "styled-components";
 
 import back from '../static/images/back.webp'
-
-const AboutMeDiv = styled.div`
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-
-  video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-  .overlay-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  }
-`;
-const CardsDiv = styled.div`
-  background-color: black;
-`;
+import '../static/stylus/pages/index.css';
 
 const NoSSRPI = dynamic({
   loader: () => import('../components/ParallaxImage'),
@@ -58,40 +13,31 @@ const NoSSRCards = dynamic({
   loader: () => import('../components/Cards'),
   ssr: false
 })
-// cover-section
-const styling = {
-  position: 'absolute',
-  top: 0,
-}
-const sector = {
-  backgroundColor: 'black',
-}
+
 const Index = (
   //{ posts }
   ) => (
   <> 
-    <div className="text-main" style={sector}>
+    <div className="text-main index-page black-back">
       <section id="intro">
           <Intro/>
       </section>
     </div>
-   <AboutMeDiv className="text-white">
+   <div className="aboutme-div text-white">
    
         <div className="overlay"></div>
         <div className="overlay-image">
           <NoSSRPI image={ back }/>
         </div>
-        <section id="about" style={{
-          zIndex: 2
-        }}>    
-          <AboutMe style={{zIndex: 2}} />
+        <section id="about" className="up-layout">    
+          <AboutMe className="up-layout" />
         </section>
-    </AboutMeDiv> 
-    <CardsDiv className="text-white text-center projects">
+    </div> 
+    <div className="text-white text-center projects black-back">
       <section id="projects">
         <NoSSRCards/>
       </section>
-    </CardsDiv>
+    </div>
   </>
 );
 

@@ -2,6 +2,12 @@
     margin-top: auto;
     margin-bottom: auto;
 }
+.display-4-parent {
+    margin: 10px 0;
+}
+.aboutMe-text-row {
+    min-height: 60vh;
+}
 .aboutMe-container {
     z-index: 2; 
     min-height: 100vh;

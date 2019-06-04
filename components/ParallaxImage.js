@@ -2,11 +2,8 @@ import { Parallax, ParallaxProvider  } from 'react-scroll-parallax';
 
 const ParallaxImageChild = ({image}) => (
   <Parallax
-    className="custom-class"
-    style={{ minHeight: "100%" }}
-    y={[-20, 20]}
-        tagOuter="figure">
-        <img src={image} style={{minHeight:"100%"}} />
+    className="custom-class min-height-fill" y={[-20, 20]} tagOuter="figure">
+        <img src={image} className="min-height-fill"/>
     </Parallax>
 );
 
