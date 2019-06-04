@@ -38,7 +38,7 @@ class Cards extends React.Component {
                             <img src={s} alt="pr-sample13" />
                             <div className="date"><span className="day">11</span><span className="month">May</span></div>
                             <figcaption>
-                                <h3>classNameic TodoApp React</h3>
+                                <h3>classic TodoApp React</h3>
                                 <p>CRUD, Redux, server requests.</p>
                             </figcaption>
                             <div className="hover"><i className="ion-android-open"></i></div>
@@ -50,7 +50,7 @@ class Cards extends React.Component {
                             <img src={t} alt="pr-sample13" />
                             <div className="date"><span className="day">10</span><span className="month">May</span></div>
                             <figcaption>
-                                <h3>Ckassic TodoApp Vue</h3>
+                                <h3>Classic TodoApp Vue</h3>
                                 <p>Vuex, without server side, data is storing in local cache.</p>
                             </figcaption>
                             <div className="hover"><i className="ion-android-open"></i></div>

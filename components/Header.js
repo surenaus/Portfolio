@@ -4,17 +4,15 @@ import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import LogoImage from '../static/logo.png'
 import CV from '../static/social-media/cv.svg'
-import Phone from '../static/social-media/phone.png'
 import Github from '../static/social-media/github.svg'
 import Linkedin from '../static/social-media/linkedin.svg'
 import Google from '../static/social-media/google.svg'
 import '../static/stylus/components/header.css';
 
-const cvlink = 'https://drive.google.com/file/d/1KorwLar9mJ9OJFgzS_j-oGV_QbsoI_Go/view?usp=sharing';
+const cvlink = 'https://drive.google.com/file/d/1c4F0xE8HvLvwUXfNwJLounEPKU28Ajvv/view?usp=sharing';
 const linkedln = "https://www.linkedin.com/in/renat-suleymanov-934260108/";
 const gmail = 'https://mail.google.com/mail/u/0/?view=cm&fs=1&to=suleimanov150796@gmail.com&su=job&body=Hello!&tf=1'
 const github = 'https://github.com/surenaus';
-const phone = '+79376135512';
 const blank = null
 
 const NoSSRImages = dynamic(
@@ -65,11 +63,6 @@ class Header extends React.Component {
                 <button className="link" >
                   <a href={gmail} target="_blank" rel="noreferrer" style={mus}>
                     <NoSSRImages text="@" image={Google} styling="icon" alt="E-mail"/>
-                  </a>
-                </button>
-                <button className="link">
-                  <a target="_blank" rel="noreferrer" style={mus}>
-                    <NoSSRImages text="Call" image={Phone} styling="icon" alt="Phone Number"/>
                   </a>
                 </button>
               </div>

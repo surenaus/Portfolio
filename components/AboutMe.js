@@ -38,15 +38,15 @@ class AboutMe extends React.Component {
                 }}>
                     <Col md={8} lg={8}  className="my-auto">
                         <p>
-                            I had been working as a Back-End Developer about 1 year
+                            I have been working as a Back-End Developer about 1 year
                             and also as a Front-End Developer in the same time.
-                            I choosed Both of them.
+                            I find both of them inspiring and interesting.
                         </p>
                         <p>
-                            I am highly-motivated, result oriented, self-driven, hard-working, 
-                            fast learner and smart eager to be a part of the team, 
-                            learn new technologies, 
-                            become a valuable employee of the company and bring it success.
+                            I am a highly-motivated, result oriented, self-driven, hard-working, 
+                            fast learner. I'm eager to be a part of the team, 
+                            lto earn new technologies, 
+                            to become a valuable employee of your company and bring it success.
                         </p>
                         <p>
                             Well-organized with an ability to prioritize tasks and capability to work, 
@@ -55,7 +55,7 @@ class AboutMe extends React.Component {
                             Attentive and accurate to details.
                         </p>   
                         <p>
-                            Below is a list of my current technical skills:
+                            Current technical skills:
                         </p>
                         <Col className="icons-technologies">
                             <NoSSRImages image={html} styling="logoStyle" alt="html5" text=""/>

@@ -126,7 +126,7 @@
 
 .snip1529:hover figcaption,
 .snip1529.hover figcaption {
-  opacity: 0;
+  font-size: 18px;
 }
 
 .snip1529:hover .date,
