@@ -24,9 +24,12 @@
 }
 
 .logoStyle {
-    width: 44px;
+    width: 8%;
+    height: 8%;
+    margin: 1%;
+    /* width: 44px;
     height: 50px;
-    margin: 10px;
+    margin: 10px; */
 }
 .text-white {
     color: white;
@@ -43,7 +46,13 @@
 .upoverlay {
     z-index: 10;
 }
-
+/* @media (max-width: 993) {
+    .logoStyle {
+        width: 30vw;
+        height: 30vw;
+        margin: 2vw;
+    }
+} */
 @media (max-width: 769) {
     .display-4 {
         font-size: 36px;
@@ -58,3 +67,24 @@
         padding: 0;
     }
 }
+@media (min-width: 481px) and (max-width: 767px) {
+    .logoStyle {
+        width: 9%;
+        height: 9%;
+        margin: 1%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  /* @media (min-width: 320px) and (max-width: 480px) {
+    .logoStyle {
+        width: 9%;
+        height: 9%;
+        margin: 1%;
+    }
+  } */

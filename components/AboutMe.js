@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-grid-system'
 import dynamic from 'next/dynamic'
 
-import avatar from '../static/images/profile.webp'
+import avatar from '../static/images/me.webp'
 import html from '../static/logos/html.svg';
 import css from '../static/logos/css.svg';
 import js from '../static/logos/js.svg';
