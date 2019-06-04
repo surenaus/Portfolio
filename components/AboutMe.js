@@ -33,8 +33,8 @@ class AboutMe extends React.Component {
                         </h1>
                     </Col>
                 </Row>
-                <Row className="aboutMe-text-row">
-                    <Col md={8} lg={8}  className="my-auto">
+                <Row className="aboutMe-text-row" >
+                    <Col md={8} lg={8} className="my-auto">
                         <p>
                             I have been working as a Back-End Developer
                             and also as a Front-End Developer in the same time.
@@ -67,7 +67,7 @@ class AboutMe extends React.Component {
                             <NoSSRImages image={ts} styling='logoStyle' alt="typescript" text=""/>
                         </Col>
                     </Col>
-                    <Col md={4} lg={4} >
+                    <Col md={4} lg={4} className="my-auto" >
                         <Col>
                             <NoSSRImages image={avatar} styling='avatarStyle' alt="author" text="author photo"/>
                         </Col>
