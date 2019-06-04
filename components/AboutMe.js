@@ -42,7 +42,7 @@ class AboutMe extends React.Component {
                         </p>
                         <p>
                             I am a highly-motivated, result oriented, self-driven, hard-working, 
-                            fast learner. I'm eager to be a part of the team, 
+                            fast learner. I'm eager to be a part of your team, 
                             lto earn new technologies, 
                             to become a valuable employee of your company and bring it success.
                         </p>
