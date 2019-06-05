@@ -86,7 +86,7 @@
   
   @media (min-width: 320px) and (max-width: 480px) {
     .logoStyle {
-       width: 14%;
+        width: 14%;
         height: 14%;
         margin: 2%;
     }

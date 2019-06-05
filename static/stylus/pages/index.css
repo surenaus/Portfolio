@@ -35,5 +35,20 @@
     z-index: 2;
 }
 .min-height-fill {
-  min-height: 100%;
+  min-height: 100vh;
+}
+
+/* @media screen and (min-width: 1600px) and (max-width: 1900px) {
+  .aboutme-div .overlay-image {
+    display: none;
+  }
+  .aboutme-div .overlay {
+    display: none;
+  }
+} */
+@media screen and (min-width: 1900px) {
+  .aboutme-div .overlay-image {
+    background-color: black;
+    text-align: center;
+  }
 }

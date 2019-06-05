@@ -27,14 +27,14 @@ class AboutMe extends React.Component {
         return (
             <Container className="aboutMe-container">
                 <Row>
-                    <Col md={12} lg={12} sm={12} className="my-auto display-4-parent">
+                    <Col xl={12} lg={12} md={12} sm={12} className="my-auto display-4-parent">
                         <h1 className="display-4 text-center">
                             About me
                         </h1>
                     </Col>
                 </Row>
                 <Row className="aboutMe-text-row" >
-                    <Col md={8} lg={8} className="my-auto">
+                    <Col xl={8} lg={8} md={8} className="my-auto">
                         <p>
                             I have been working as a Back-End Developer
                             and also as a Front-End Developer in the same time.
@@ -67,7 +67,7 @@ class AboutMe extends React.Component {
                             <NoSSRImages image={ts} styling='logoStyle' alt="typescript" text=""/>
                         </Col>
                     </Col>
-                    <Col md={4} lg={4} className="my-auto" >
+                    <Col xl={4} lg={4} md={4} className="my-auto" >
                         <Col align="center">
                             <NoSSRImages image={avatar} styling='avatarStyle' alt="author" text="author photo"/>
                         </Col>

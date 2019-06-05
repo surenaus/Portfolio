@@ -5,8 +5,7 @@
 .cards-title {
   margin-bottom: 120px;
   z-index: 2; 
-  font-family: 'BebasNeue Regular';
-  font-weight: 100;
+  /* font-weight: 100; */
   letter-spacing: 0.2vw;
   font-size: 40px;
 }
@@ -43,8 +42,7 @@
   opacity: 0.85;
   object-fit: cover;
   object-position: 100% 0;
-
-  height: 280px;
+  height: 300px;
 }
 .snip1529 .no-image {
   object-fit: scale-down;
@@ -94,20 +92,6 @@
   font-weight: 800;
 }
 
-/* .snip1529 .hover {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  align-items: center;
-  background-color: rgba(236, 188, 46, 0.75);
-  display: flex;
-  font-size: 65px;
-  justify-content: center;
-  opacity: 0;
-} */
-
 .snip1529 a {
   left: 0;
   right: 0;
@@ -133,4 +117,16 @@
 .snip1529.hover .date {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
+}
+
+@media (min-width: 1281px) {
+  .snip1529 img {
+    height: 270px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+  .snip1529 img {
+    height: 270px;
+  }
 }
