@@ -71,9 +71,6 @@ class AboutMe extends React.Component {
                         <Col align="center">
                             <NoSSRImages image={avatar} styling='avatarStyle' alt="author" text="author photo"/>
                         </Col>
-                        <Col>
-                            <p className="text-center"><small className="about-avatar-text">Renat Suleymanov</small></p>
-                        </Col>
                     </Col>
                 </Row>
             </Container>
