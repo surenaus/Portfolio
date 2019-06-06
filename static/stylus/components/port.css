@@ -36,19 +36,20 @@
 }
 
 .snip1529 img {
-  width: 100%;
+  max-width: 100%;
   vertical-align: top;
   position: relative;
   opacity: 0.85;
   object-fit: cover;
   object-position: 100% 0;
-  height: 300px;
+  max-height: 100%;
 }
 .snip1529 .no-image {
-  object-fit: scale-down;
-  position: absolute;
+  display:block;
+  margin: 30% auto;
+  width: 240px;
+  height: 80px;
   opacity: 1;
-  object-position: 50% 50%;
 }
 
 .snip1529 figcaption {
@@ -118,7 +119,7 @@
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-
+/* 
 @media (min-width: 1281px) {
   .snip1529 img {
     height: 270px;
@@ -129,4 +130,4 @@
   .snip1529 img {
     height: 270px;
   }
-}
+} */
