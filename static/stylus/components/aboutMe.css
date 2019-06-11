@@ -7,6 +7,8 @@
 }
 .aboutMe-text-row {
     min-height: 60vh;
+    font-family: 'BebasNeue Regular';
+    font-weight: 100;
 }
 .aboutMe-container {
     z-index: 2; 
@@ -36,6 +38,7 @@
 }
 .text-main {
     color: #f8f9fa;
+    
 }
 .text-black {
     color: black;

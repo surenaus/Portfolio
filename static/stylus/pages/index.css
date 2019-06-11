@@ -1,7 +1,10 @@
+
 .aboutme-div{
     position: relative;
     min-height: 100vh;
     overflow: hidden;
+
+    font-family: 'BebasNeue Regular';
 }
 
 .aboutme-div .overlay-image {

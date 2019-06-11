@@ -1,7 +1,6 @@
 .intro {
   min-height: 100vh;
   letter-spacing: 1vw;
-  font-family: "BebasNeue";
 }
 .intro .row-main {
   display: flex;
@@ -11,14 +10,14 @@
 .intro .first-line, .intro .second-line {
   font-size: 56px;
   line-height: 4vh;
+  font-family: 'BebasNeue Thin';
 }
 .intro .main p {
     position: relative;
     text-transform: uppercase;
-    font-family: 'BebasNeue-Bold';
     font-size: 36px;
-    font-weight: lighter;
-    letter-spacing: 4px;
+    font-weight: bold;
+    letter-spacing: 10px;
     overflow: hidden;
     /* background: linear-gradient(90deg,#000, #fff, #000); */
     background: linear-gradient(90deg,#fff, #000, #fff);
@@ -28,6 +27,7 @@
     animation: animate 5s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    font-family: 'BebasNeue Regular';
   }
 
   @keyframes animate {

@@ -29,7 +29,11 @@ class Cards extends React.Component {
                                 <p>Landing of banking service Halva.</p>
                             </figcaption>
                             <div className="hover"><i className="ion-android-open"></i></div>
-                            <a href="https://drive.google.com/open?id=1XSXzwNx-u2DogeUr3fYHSmrZuDs0dmSh" rel="noopener noreferrer" target="_blank"></a>
+                            <a href="https://drive.google.com/open?id=1XSXzwNx-u2DogeUr3fYHSmrZuDs0dmSh"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                aria-label="SovCombank"
+                            ></a>
                         </figure>
                     </Col>
                     <Col xl={4} lg={6} md={6} sm={12}>
@@ -41,7 +45,11 @@ class Cards extends React.Component {
                                 <p>CRUD, Redux, server requests.</p>
                             </figcaption>
                             <div className="hover"><i className="ion-android-open"></i></div>
-                            <a href="https://github.com/surenaus/react_todo_beeje"  rel="noopener noreferrer" target="_blank"></a>
+                            <a href="https://github.com/surenaus/react_todo_beeje"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                aria-label="react_todo_beeje"
+                            ></a>
                         </figure>
                     </Col>
                     <Col xl={4} lg={6} md={6} sm={12}>
@@ -53,7 +61,11 @@ class Cards extends React.Component {
                                 <p>Vuex, without server side, data is storing in local cache.</p>
                             </figcaption>
                             <div className="hover"><i className="ion-android-open"></i></div>
-                            <a href="https://github.com/surenaus/vue-todo-app" rel="noopener noreferrer" target="_blank"></a>
+                            <a href="https://github.com/surenaus/vue-todo-app"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                aria-label="vue-todo-app"
+                            ></a>
                         </figure>
                     </Col>
                     <Col xl={4} lg={6} md={6} sm={12}>
@@ -65,7 +77,10 @@ class Cards extends React.Component {
                                 <p>Thesis diploma Django project that allows to extract music from photo.</p>
                             </figcaption>
                             <div className="hover"><i className="ion-android-open"></i></div>
-                            <a href="http://gititis.kpfu.ru/suren/PhotoTurntable" rel="noopener noreferrer" target="_blank"></a>
+                            <a href="http://gititis.kpfu.ru/suren/PhotoTurntable" rel="noopener noreferrer"
+                                target="_blank"
+                                aria-label="PhotoTurntable"
+                            ></a>
                         </figure>
                     </Col>
                 </Row>

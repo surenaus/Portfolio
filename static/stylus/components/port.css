@@ -5,9 +5,8 @@
 .cards-title {
   margin-bottom: 120px;
   z-index: 2; 
-  /* font-weight: 100; */
-  letter-spacing: 0.2vw;
-  font-size: 40px;
+  font-family: 'BebasNeue Regular';
+  font-size: 34px;
 }
 .text-center {
   text-align: center;
@@ -26,6 +25,7 @@
   position: relative;
   text-align: left;
   margin-bottom: 10%;
+
 }
 
 .snip1529 * {
@@ -62,8 +62,7 @@
 .snip1529 .date {
   background-color: #fff;
   color: #333;
-  font-size: 18px;
-  font-weight: 800;
+  /* font-size: 18px; */
   min-height: 48px;
   min-width: 48px;
   padding: 10px 0;
@@ -72,6 +71,8 @@
   text-align: center;
   text-transform: uppercase;
   top: 0;
+  font-family: 'BebasNeue Regular';
+
 }
 
 .snip1529 .date span {
@@ -88,10 +89,13 @@
   margin: 0;
   padding: 0;
 }
-
 .snip1529 h3 {
-  font-weight: 800;
+  font-family: 'BebasNeue Regular';
 }
+.snip1529 p {
+  font-family: 'BebasNeue Thin';
+}
+
 
 .snip1529 a {
   left: 0;

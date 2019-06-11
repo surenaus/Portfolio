@@ -6,8 +6,8 @@ import Footer from '../components/Footer';
 
 export const title = "PWA Portfolio";
 const description =
-  "Next.js PWA Boilerplate starts your progressive web app off with a perfect Google Lighthouse score.";
-const url = `https://next-pwa-boilerplate.now.sh`;
+  "SuRen team Next.js PWA, progressive web app off with a perfect Google Lighthouse score.";
+const url = `https://next-pwa-boilerplate.suleimanov150796.now.sh/`;
 const thumbnail = `${url}/static/graphics/thumbnail.png`;
 
 
